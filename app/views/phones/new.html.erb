@@ -1,0 +1,49 @@
+<h1>Provide the Following information: </h1>
+
+<%= form_for(@phone) do |f| %>
+
+    <p>
+    <%=f.label :name%>
+    <%=f.text_field :name%>
+ 
+    <p>
+    <%=f.label :brand%>
+    <%=f.text_field :brand%>
+  
+    <p>    
+    <%=f.label "Year Released"%>
+    <%=f.text_field :year_released%>
+  
+    <p>
+    <%=f.label :camera%>
+    <%=f.text_field :camera%>
+
+    <p>
+    <%=f.label "Mega Pixels"%>
+    <%=f.text_field :mpixels%>
+
+    <p>
+    <%=f.label "Internal Storage(in GB)"%>
+    <%=f.text_field :internalS%>
+
+    <p>
+    <%=f.label "Number of Sim slots"%>
+    <%=f.text_field :num_of_sim_slots%>
+
+    <p>
+    <%=f.label "Size of screen(in inches)"%>
+    <%=f.text_field :size_of_screen%>
+
+    <p>
+    <%=f.label "Operating System"%>
+    <%=f.text_field :operating_system%>
+
+    <p>
+    <%=f.label "Number in Stock"%>
+    <%=f.text_field :num_in_stock%>
+
+     <p>
+     
+    <%= f.submit "Post this phone" %>
+
+<% end %>

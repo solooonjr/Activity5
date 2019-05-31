@@ -1,0 +1,32 @@
+<h1>Android nang Bayan Inc. </h1>
+
+<table>
+    <tr>
+
+        <th>Name</th>
+        <th>Brand</th>
+
+    </tr>
+
+    <% @phones.each do |phones| %>
+    <tr>
+        <td><%= phones.name %></td>
+        <td><%= phones.brand %></td>
+
+        <td>
+            <a href="phones/<%= phones.id %>">
+                SHOW
+            </a>
+        </td>
+
+    </tr>    
+    <% end %>
+    
+        <td>
+            <a href="phones/new">
+                Post a Phone
+            </a>
+        </td>
+     
+
+</table>
